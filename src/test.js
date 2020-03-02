@@ -1,8 +1,8 @@
+import dragrotatescale from 'dragrotatescale'
 import img from './static/k.png'
-
 let preImg = document.getElementById('preImg')
 let preImg2 = document.getElementById('preImg2')
-let o = new dragRotateScale(preImg, {
+let o = new dragrotatescale(preImg, {
     src: img, //要拖动的图片地址
     rotateButton: 30, // 按钮的宽高
     imgScaleMax: 10, //缩放限制
@@ -27,7 +27,7 @@ let o = new dragRotateScale(preImg, {
     }
 })
 
-new dragRotateScale(preImg2, {
+new dragrotatescale(preImg2, {
     src: img, //要拖动的图片地址
     rotateButton: 30, // 按钮的宽高
     imgScaleMax: 10, //缩放限制

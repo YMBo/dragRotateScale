@@ -1,5 +1,5 @@
 {
-    "name": "dragRotateScale",
+    "name": "drag-img",
     "version": "1.0.0",
     "description": "移动端旋转、缩放、移动图片组件",
     "main": "dist/dragRotateScale.js",
@@ -7,6 +7,12 @@
         "dev": "NODE_ENV=development webpack-dev-server --config config/webpack.config.js",
         "build": "NODE_ENV=production  webpack   --config config/webpack.config.js"
     },
+    "keywords": [
+        "rotate",
+        "scale",
+        "drag",
+        "dragimg"
+    ],
     "repository": {
         "type": "git",
         "url": "https://github.com/YMBo/dragRotateScale"
