@@ -1,0 +1,57 @@
+.dragRotateScale_move.dragRotateScale_active {
+    z-index: 3;
+    border: 2px dashed #f61e1e;
+}
+
+.dragRotateScale_move {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 2;
+}
+
+.dragRotateScale_move.dragRotateScale_active .dragRotateScale_close {
+    display: block;
+}
+
+.dragRotateScale_move .dragRotateScale_close {
+    position: absolute;
+    left: -25px;
+    bottom: -25px;
+    z-index: 2;
+    background-image: url('./close.png');
+    background-size: cover;
+    border-radius: 100%;
+    border: 2PX solid #000;
+    box-shadow: 0 0 5PX 4PX #ccc;
+    width: 50px;
+    height: 50px;
+    display: none;
+}
+
+.dragRotateScale_move.dragRotateScale_active .dragRotateScale_rotate {
+    display: block;
+}
+
+.dragRotateScale_move .dragRotateScale_rotate {
+    position: absolute;
+    background-size: cover;
+    right: -25px;
+    top: -25px;
+    z-index: 2;
+    background-image: url('./rotate.png');
+    border-radius: 100%;
+    border: 2PX solid #000;
+    box-shadow: 0 0 5PX 4PX #ccc;
+    width: 50px;
+    height: 50px;
+    display: none;
+}
+
+.dragRotateScale_move {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 2;
+    font-size: 0;
+}
