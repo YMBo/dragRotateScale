@@ -19,7 +19,7 @@
     left: -25px;
     bottom: -25px;
     z-index: 2;
-    background-image: url('./close.png');
+    /* background-image: url('./close.png'); */
     background-size: cover;
     border-radius: 100%;
     border: 2PX solid #000;
@@ -39,7 +39,7 @@
     right: -25px;
     top: -25px;
     z-index: 2;
-    background-image: url('./rotate.png');
+    /* background-image: url('./rotate.png'); */
     border-radius: 100%;
     border: 2PX solid #000;
     box-shadow: 0 0 5PX 4PX #ccc;

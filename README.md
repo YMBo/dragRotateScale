@@ -7,6 +7,36 @@ npm install drag-img -S
 ```  
 
 # 使用  
+1. 直接引用  
+``` css
+/* 旋转按钮图片 */
+.dragRotateScale_move .dragRotateScale_rotate {
+    background-image: url('../../static/b.jpg');
+}
+/* 关闭按钮图片 */
+.dragRotateScale_move .dragRotateScale_close {
+    background-image: url('../../static/b.jpg');
+}
+```    
+``` javascript
+<script type="text/javascript" src="./dragRotateScale.js"></script>
+let preImg2 = document.getElementById('preImg2')
+new dragRotateScale(preImg2, {
+    ...
+})
+```
+
+2. npm   
+``` css
+/* 旋转按钮图片 */
+.dragRotateScale_move .dragRotateScale_rotate {
+    background-image: url('../../static/b.jpg');
+}
+/* 关闭按钮图片 */
+.dragRotateScale_move .dragRotateScale_close {
+    background-image: url('../../static/b.jpg');
+}
+```    
 ``` javascript
 import dragrotatescale from 'drag-img'
 new dragrotatescale(preImg2, {

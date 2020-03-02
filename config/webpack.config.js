@@ -11,6 +11,7 @@ const isProd = process.env.NODE_ENV === 'production'
 
 let plugin = []
 let devServer = {}
+let entry = {}
 if (!isProd) {
     devServer = {
         // 告诉服务器从哪里提供内容。只有在你想要提供静态文件时才需要
@@ -41,11 +42,19 @@ if (!isProd) {
             chunksSortMode: 'dependency',
         })
     ]
+    entry = {
+        dragRotateScale: path.resolve(__dirname, '../src/dragRotateScale.js'),
+        test: path.resolve(__dirname, '../src/test.js'),
+    }
 } else {
+    entry = {
+        dragRotateScale: path.resolve(__dirname, '../src/dragRotateScale.js'),
+    }
     plugin = [
         new UglifyJsPlugin({
-            sourceMap: true,
-            parallel: true,
+            parallel: true, // 开启并行压缩，充分利用cpu
+            sourceMap: false,
+            extractComments: true, // 移除注释
         }),
         // extractCSS,
         // extractLESS,
@@ -59,12 +68,8 @@ if (!isProd) {
 
 
 module.exports = {
-    mode: 'development',
-    devtool: '#cheap-module-eval-source-map',
-    entry: {
-        dragRotateScale: path.resolve(__dirname, '../src/dragRotateScale.js'),
-        test: path.resolve(__dirname, '../src/test.js'),
-    },
+    mode: isProd ? 'production' : 'development',
+    entry,
     output: {
         // 将js文件放的位置
         path: path.resolve(__dirname, '../dist/'),
