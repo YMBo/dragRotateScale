@@ -1,4 +1,4 @@
-# dragRotateScale
+# drag-img
 移动端旋转、缩放、移动图片组件（仅支持移动端）
 
 # 安装   

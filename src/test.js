@@ -1,4 +1,4 @@
-import dragrotatescale from 'dragrotatescale'
+import dragrotatescale from 'drag-img'
 import img from './static/k.png'
 let preImg = document.getElementById('preImg')
 let preImg2 = document.getElementById('preImg2')
