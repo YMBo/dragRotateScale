@@ -7,7 +7,7 @@ npm install drag-img -S
 ```  
 
 # 使用  
-```
+``` javascript
 import dragrotatescale from 'drag-img'
 new dragrotatescale(preImg2, {
     src: img,         //要拖动的图片地址
