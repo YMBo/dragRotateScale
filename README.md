@@ -35,4 +35,6 @@ new dragrotatescale(preImg2, {
 })
 
 
-```
+```   
+# 预览  
+![预览](./pre/pre.gif)
